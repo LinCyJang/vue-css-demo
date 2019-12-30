@@ -1,6 +1,7 @@
 <template>
     <div class="stars">
         <div class="star" ref="star"  v-for="(item,index) in starsCount" :key="index"></div>
+        <!-- 在这里写入你的内容 -->
     </div>
 </template>
 <script>
@@ -18,16 +19,15 @@ export default {
         let _this = this;
         // 原生js
         let _starList = document.getElementsByClassName("star")
-        let  starArr = Array.prototype.slice.call(_starList)
-        console.log("starArr:",starArr)
-        // vue ref免DOM操作
+        let starArr = Array.prototype.slice.call(_starList)
+        // vue
         let starList = this.$refs.star
-        console.log("Array:", starList)
+        // 遍历添加样式
         starArr.forEach(item => {
-            var speed = 0.2 + (Math.random() * 1);
+            var s = 0.2 + (Math.random() * 1);
             var thisDistance = _this.distance + (Math.random() * 300);
             item.style.transformOrigin = `0 0 ${thisDistance}px`
-            item.style.transform = `translate3d(0,0,-${thisDistance}px) rotateY(${(Math.random() * 360)}deg) rotateX(${(Math.random() * -50)}deg) scale(${speed},${speed})`
+            item.style.transform = `translate3d(0,0,-${thisDistance}px) rotateY(${(Math.random() * 360)}deg) rotateX(${(Math.random() * -50)}deg) scale(${s},${s})`
         })
     },
     methods:{
