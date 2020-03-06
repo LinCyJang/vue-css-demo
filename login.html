@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body,
+        html {
+            background-color: #ebecf0;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .log-wrap {
+            width: 320px;
+            padding: 16px;
+            margin: 0 auto;
+        }
+        
+        .headline {
+            color: #61677c;
+            text-shadow: 1px 1px 1px #ffffff;
+            text-align: center;
+        }
+        
+        .log-wrap input,
+        .log-wrap button {
+            color: #61677c;
+            padding: 16px;
+            background-color: #ebecf0;
+            text-shadow: 1px 1px 0px #ffffff;
+            font-size: 16px;
+            border-radius: 320px;
+            width: 100%;
+            border: 0;
+            outline: 0;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+        
+        .input-item,
+        .log-button {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .input-item input {
+            box-sizing: border-box;
+            box-shadow: inset 2px 2px 5px #babecc, inset -2px -2px 15px #ffffff;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .input-item input:focus {
+            box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #ffffff;
+        }
+        
+        .log-wrap button {
+            box-shadow: 5px 5px 10px #babecc, -5px -5px 20px #ffffff;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .log-wrap button:hover {
+            box-shadow: 2px 2px 5px #babecc, -2px -2px 5px #ffffff;
+        }
+        
+        .log-wrap button:active {
+            box-shadow: inset -1px -1px 2px #ffffff, inset 1px 1px 2px #babecc;
+        }
+        
+        .log-button button {
+            color: #ea1100;
+            font-weight: 900;
+            letter-spacing: 5px;
+        }
+        
+        .button-group {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .button-group .button-item,
+        .segment .button-item {
+            width: 48px;
+            height: 48px;
+            border-radius: 5px;
+            margin: 0 8px;
+            color: #61677c;
+        }
+        
+        .segment {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="log-wrap">
+        <div class="headline">
+            <h1>Welcome</h1>
+        </div>
+        <div class="input-group">
+            <div class="input-item">
+                <input type="text" placeholder="accout" class="input-item__innerinput">
+            </div>
+            <div class="input-item">
+                <input type="password" placeholder="password" class="input-item__innerinput">
+            </div>
+        </div>
+        <div class="log-button">
+            <button class="log-button__button">登录</button>
+        </div>
+        <div class="button-group">
+            <button class="button-item">a</button>
+            <button class="button-item">b</button>
+            <button class="button-item">c</button>
+        </div>
+        <div class="segment">
+            <div class="input-item">
+                <input type="text" placeholder="search">
+            </div>
+            <button class="button-item">d</button>
+        </div>
+    </div>
+</body>
+
+</html>
